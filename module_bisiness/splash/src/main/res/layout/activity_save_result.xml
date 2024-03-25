@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <com.example.splash.view.CircleProgress
+            android:id="@+id/circleProgress"
+            android:layout_width="@dimen/dp_205"
+            android:layout_height="@dimen/dp_205"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dp_117"
+            />-->
+    <com.liningkang.ui.view.ScaleLottieAnimationView
+        android:id="@+id/iconView"
+        android:layout_width="@dimen/dp_217"
+        app:lottie_fileName="save_loading.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_height="@dimen/dp_217"
+        android:layout_marginTop="@dimen/dp_85"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.liningkang.ui.view.BoldTextView
+        android:id="@+id/progressText"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/_2d3548"
+        android:textSize="@dimen/sp_32"
+        app:isBold="true"
+        app:layout_constraintStart_toStartOf="@+id/iconView"
+        app:layout_constraintEnd_toEndOf="@+id/iconView"
+        app:layout_constraintTop_toTopOf="@+id/iconView"
+        app:layout_constraintBottom_toBottomOf="@+id/iconView"
+        />
+
+    <com.liningkang.ui.view.BoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_27"
+        android:gravity="center"
+        android:text="@string/save_guide_result_title"
+        android:textColor="@color/_2d3548"
+        android:textSize="@dimen/sp_22"
+        app:isBold="true"
+        app:layout_constraintTop_toBottomOf="@+id/iconView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="save"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_65"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

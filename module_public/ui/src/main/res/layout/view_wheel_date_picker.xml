@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.liningkang.ui.view.picker_view.WheelMonthPicker
+        android:id="@+id/wheel_date_picker_month"
+        android:layout_width="@dimen/dp_130"
+        android:layout_height="wrap_content"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#0A6CFF"
+        app:wheel_indicator_size="@dimen/dp_1"
+        app:wheel_item_align="left"
+        app:model="english"
+        app:wheel_item_space="@dimen/dp_20"
+        app:wheel_item_text_color="@color/_cacaca"
+        app:wheel_item_text_size="@dimen/sp_15"
+        app:wheel_selected_item_text_color="@color/_333333"
+        app:wheel_visible_item_count="4"/>
+
+
+
+    <com.liningkang.ui.view.picker_view.WheelDayPicker
+        android:id="@+id/wheel_date_picker_day"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#0A6CFF"
+        app:wheel_indicator_size="@dimen/dp_1"
+        app:wheel_item_align="left"
+        app:wheel_item_space="@dimen/dp_20"
+        app:wheel_item_text_color="@color/_cacaca"
+        app:wheel_item_text_size="@dimen/sp_15"
+        app:wheel_selected_item_text_color="@color/_333333"
+        app:wheel_visible_item_count="4"/>
+
+    <com.liningkang.ui.view.picker_view.WheelYearPicker
+        android:id="@+id/wheel_date_picker_year"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#0A6CFF"
+        app:wheel_indicator_size="@dimen/dp_1"
+        app:wheel_item_align="center"
+        app:wheel_item_space="@dimen/dp_20"
+        app:wheel_item_text_color="@color/_cacaca"
+        app:wheel_item_text_size="@dimen/sp_15"
+        app:wheel_selected_item_text_color="@color/_333333"
+        app:wheel_visible_item_count="4"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

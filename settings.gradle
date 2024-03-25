@@ -1,0 +1,55 @@
+pluginManagement {
+    repositories {
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        mavenCentral()
+        maven { url = "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url = "https://maven.aliyun.com/repository/google" }
+        maven { url = "https://maven.aliyun.com/repository/central" }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://nexus3-public.monetplus.cz/repository/ahead-talsec-free-rasp" }// 保活
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+        google()
+        mavenCentral()
+        maven { url = "https://maven.aliyun.com/repository/google" }
+        maven { url = "https://maven.aliyun.com/repository/central" }
+        maven { url = "https://maven.aliyun.com/repository/jcenter" }
+        maven { url 'https://android-sdk.is.com/' }
+        maven { url 'https://artifact.bytedance.com/repository/pangle' }
+        maven { url 'https://jitpack.io' }
+        maven { url "https://nexus3-public.monetplus.cz/repository/ahead-talsec-free-rasp" }
+    }
+}
+rootProject.name = "common_base"
+include ':app'
+include ':module_public'
+include ':module_system:base'
+include ':module_system:utils'
+
+include ':module_system:network'
+include ':module_system:common'
+
+include ':module_public:ui'
+
+include ':module_bisiness:userinfo'
+include ':languagelib'
+include ':module_system'
+include ':module_public:sdks'
+include ':module_public:sound_effect'
+//include ':module_public:sdks:analytics'
+//include ':module_public:sdks:bebe'
+//include ':module_public:sdks:notification'
+//include ':module_public:sdks:ad'
+include ':module_bisiness:splash'
+include ':module_bisiness:main'
+
+
+
+include ':module_bisiness:loading'
+include ':module_bisiness:setting'
+include ':module_bisiness:notification'

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomDialog">
+        <item name="android:windowFrame">@null</item> <!--边框-->
+        <item name="android:windowIsFloating">true</item> <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item> <!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/dialog_custom_bg</item> <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item> <!--模糊-->
+        <item name="android:backgroundDimAmount">1.0</item>
+    </style>
+
+    <style name="SplashProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/splash_progress_style</item>
+
+    </style>
+
+
+    <declare-styleable name="ShadowViewCard">
+        <!--圆角度-->
+        <attr name="shadowRound" format="dimension" />
+        <!--阴影的高度-->
+        <attr name="shadowLeftHeight" format="dimension" />
+        <attr name="shadowTopHeight" format="dimension" />
+        <attr name="shadowRightHeight" format="dimension" />
+        <attr name="shadowBottomHeight" format="dimension" />
+        <attr name="contentPaddingBottom" format="dimension" />
+
+        <!--上方阴影的偏离度-->
+        <attr name="shadowOffsetY" format="dimension" />
+        <attr name="shadowOffsetX" format="dimension" />
+        <!--阴影颜色-->
+        <attr name="shadowCardColor" format="color" />
+        <attr name="shadowColor" format="color" />
+        <!--阴影颜色模糊度，越大越模糊-->
+        <attr name="shadowRadius" format="integer" />
+    </declare-styleable>
+
+
+</resources>

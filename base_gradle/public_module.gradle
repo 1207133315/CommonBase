@@ -1,0 +1,57 @@
+def ext = rootProject.ext
+def androidConfig = ext.android
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-kapt'
+// kotlin接入ARouter
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+android {
+    compileSdk androidConfig.compileSdkVersion
+    defaultConfig {
+
+        minSdk androidConfig.minSdkVersion
+        targetSdk androidConfig.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // 接入ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+
+        }
+        debug {
+
+        }
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+   // implementation ext.dependencies.coreKtx
+    implementation ext.dependencies.appcompat
+    implementation ext.dependencies.material
+   // implementation ext.dependencies.constraintlayout
+    // 接入ARouter  包括kotlin的接入方式
+    implementation ext.dependencies.arouterApi
+    kapt ext.dependencies.arouterCompiler
+    annotationProcessor ext.dependencies.arouterCompiler
+
+
+}

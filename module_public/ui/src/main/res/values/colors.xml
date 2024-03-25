@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <!--启动页背景色-->
+    <!--启动页进度条颜色-->
+    <color name="shadow_default_color">#1A000000</color>
+    <color name="shadow_card_default_color">#FFFFFF</color>
+    <color name="_3d8aff">#3D8AFF</color>
+    <color name="_333333">#333333</color>
+    <color name="_f1f1f1">#f1f1f1</color>
+    <color name="_2d3548">#2D3548</color>
+    <!--<color name="_7b58ff">#7B58FF</color>-->
+    <color name="_7b58ff">#FF4784</color>
+    <color name="_ff4784">#FF4784</color>
+    <color name="_999999">#999999</color>
+    <color name="_cacaca">#CACACA</color>
+    <color name="_f6faff">#F6FAFF</color>
+
+    <color name="_757f8b">#757F8B</color>
+</resources>

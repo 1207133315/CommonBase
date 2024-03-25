@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFF"
+    tools:context=".activity.PrivacyPolicyActivity">
+
+    <com.liningkang.ui.view.title.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="Privacy Policy"
+        app:isShowSkip="false"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="@dimen/dp_0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/dp_20"
+            android:layout_height="match_parent">
+            <com.liningkang.ui.view.BoldTextView
+                android:id="@+id/contentText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/_2d3548"
+                android:textSize="@dimen/sp_15"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

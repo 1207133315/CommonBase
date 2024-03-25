@@ -1,0 +1,39 @@
+apply from: '../../base_gradle/public_module.gradle'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+
+    implementation project(path: ':module_system:network')
+    implementation project(path: ':languagelib')
+    implementation "com.jaeger.statusbarutil:library:${ext.version.statusbarutil}"
+    implementation "com.tencent:mmkv:${ext.version.mmkv}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${ext.version.viewmodel_ktx}"
+    implementation "com.github.likaiyuan559:TouchEffects:${ext.version.touch_effects}"
+    implementation "androidx.fragment:fragment-ktx:${ext.version.fragment_ktx}"
+    implementation project(path: ':module_system:common')
+    implementation "org.greenrobot:eventbus:${ext.version.eventbus}"
+
+
+
+}

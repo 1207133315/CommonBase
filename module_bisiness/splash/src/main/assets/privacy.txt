@@ -1,0 +1,140 @@
+This policy only applies to "Intimacy Tracker" products or services. Last updated: {2023.11.10}
+This policy will help you understand the following:
+1. How we collect and use your user information
+2. How we use cookies and similar technologies
+3. How we share, transfer and publicly disclose your user information
+4. How we protect your user information
+5. Your rights
+6. How we process children’s personal information
+7. How your user information is stored and transferred globally
+8. How to update this policy
+9. How to contact us
+We fully understand the importance of user information to you and will do our best to protect the safety and reliability of your user information. We are committed to maintaining your trust in us and abiding by the following principles to protect your user information: the principle of consistency of rights and responsibilities, the principle of clear purpose, the principle of choice and consent, the least sufficient principle, the principle of ensuring security, the principle of subject participation, the principle of openness and transparency, etc. . At the same time, we promise that we will take corresponding security protection measures to protect your user information in accordance with mature security standards in the industry.
+Please read and understand this privacy policy carefully before using our products (or services).
+
+1. How we collect and use your user information
+(1) Information we collect and use when you use our products or services
+We will only collect and use your user information for the business functions described in this policy. The purpose of collecting user information is to provide you with products or services. You have the right to choose whether to provide this information, but in most cases, if If you do not provide it, we may not be able to provide you with corresponding services or respond to your problems:
+When you use our services, we are allowed to collect information that you provide to us or that is necessary to provide you with services, including: personal identity information, device information, log information, IP address, location information, etc. For the user information we collect, we will use it to provide you with functions such as identity verification, customer service, security, display activities and health monitoring records.
+The above information you provide will continue to be used by us during your use of this service. When you stop using the push service, we will stop using and delete the above information.
+We guarantee that the collected user information will be de-identified or anonymized in accordance with the law. Information that cannot identify a natural person alone or combined with other information does not constitute personal information in the legal sense. If we combine non-personal information with other information to identify you personally, or use it in combination with your personal information, we will treat such information as your personal information in accordance with this Privacy Policy during the combined use period. Process and protect.
+In order to better operate and improve our technology and services, or due to changes in business strategies, when the collection, use, and processing of user information required for the products or services we provide exceed the above scope or the collected user information is to be used for For other purposes not specified in this Privacy Policy, or when we want to use the information collected for a specific purpose for other purposes, we will notify you within a reasonable period after obtaining the user information or before processing the user information, and obtain Your authorization and consent.
+(2) Exceptions with authorization and consent
+Please understand that in accordance with laws, regulations and relevant national standards, we do not need to obtain your authorization to collect and use your user information in the following situations:
+1. Directly related to national security and national defense security;
+2. Directly related to public safety, public health, and major public interests;
+3. Directly related to criminal investigation, prosecution, trial and judgment execution;
+4. To protect your or other individuals’ life, property and other major legitimate rights and interests but it is difficult to obtain your consent;
+5. Your user information collected is disclosed to the public by you;
+6. Your user information collected from legally publicly disclosed information, such as legal news reports, government information disclosure and other channels;
+7. Necessary to sign or perform a contract at your request;
+8. Necessary to maintain the safe and stable operation of software and related services, such as discovering and handling faults in software and related services;
+9. The personal information controller is a news unit and it is necessary for it to carry out legal news reports;
+10. When it is necessary for an academic research institution to conduct statistical or academic research based on public interests, and when providing the results of academic research or description to the outside world, the personal information contained in the results will be de-identified.
+11、Other situations specified by laws and regulations.
+
+2. How we use cookies and similar technologies
+(1) Cookies
+To ensure the normal operation of the website, we will store small data files called Cookies on your computer or mobile device. Cookies usually contain an identifier, the site name, and some numbers and characters. With the help of cookies, the website can store data about your access preferences.
+We will not use Cookies for any purpose other than those stated in this policy. You can manage or delete cookies according to your preferences. You can clear all cookies saved on your computer, and most web browsers have the function to block cookies. However, if you do this, you will need to change your user settings yourself each time you visit our website.
+(2) Website beacons and pixel tags
+In addition to Cookies, we also use other similar technologies such as web beacons and pixel tags on our website. For example, emails we sent you may contain click URLs linked to content on our website.
+If you click this link, we will track this click to help us understand your product or service preferences and improve customer service. A web beacon is typically a transparent image embedded into a website or email. With the help of pixel tags in emails, we can learn whether the emails have been opened. If you do not want your activities to be tracked in this way, you can unsubscribe from our mailing list at any time.
+(3) Do Not Track
+Many web browsers have a Do Not Track function, which can issue Do Not Track requests to websites. Currently, the major Internet standards organizations have no policies in place that govern how websites should respond to such requests. But if your browser has Do Not Track enabled, all of our websites will respect your choice.
+
+3. How we share, transfer and publicly disclose your user information
+(1) Sharing
+We will not share your user information with any other company, organization or individual, except in the following circumstances:
+1. Sharing with explicit consent: After obtaining your explicit consent, we will share your user information with other parties.
+2. We may share your user information externally in accordance with the provisions of laws and regulations, or in accordance with the mandatory requirements of government authorities.
+3. Sharing with our affiliated companies: Your user information may be shared with our affiliated companies. We will only share necessary user information and subject to the purposes stated in this Privacy Policy. If affiliated companies want to change the purpose of processing user information, they will ask for your authorization and consent again.
+4. Sharing with authorized partners: Only to achieve the purpose stated in this policy, some of our services will be provided by authorized partners. We may share some of your user information with partners to provide better customer service and user experience. We will only share your user information for legal, legitimate, necessary, specific, and clear purposes, and we will only share user information necessary to provide services. In order to better operate and improve technology and services, you agree that we and our authorized partners can use the collected information for other services and purposes in compliance with relevant laws and regulations.
+We will sign strict confidentiality agreements with companies, organizations and individuals with whom we share user information, requiring them to handle user information in accordance with our instructions, this Privacy Policy and any other relevant confidentiality and security measures.
+(2) Transfer
+We will not transfer your user information to any company, organization or individual, except in the following circumstances:
+1. Transfer with explicit consent: After obtaining your explicit consent, we will transfer your user information to other parties;
+2. When mergers, acquisitions or bankruptcy liquidations are involved, if user information is transferred, we will require the new company or organization that holds your user information to continue to be bound by this privacy policy. Otherwise, we will require the company or organization to continue to be bound by this privacy policy. Re-ask for your authorization and consent.
+(3) Public disclosure
+We will only publicly disclose your user information under the following circumstances:
+1. After obtaining your explicit consent;
+2. Disclosure based on law: We may publicly disclose your user information when required by laws, legal procedures, lawsuits or mandatory requirements from government authorities.
+(4) Exceptions to obtaining prior authorization and consent when sharing, transferring, or publicly disclosing information
+Please understand that in accordance with laws, regulations and relevant national standards, we do not need to obtain your authorization to share, transfer, or publicly disclose your user information in the following situations:
+1. Directly related to national security and national defense security;
+2. Directly related to public safety, public health, and major public interests;
+3. Directly related to criminal investigation, prosecution, trial and judgment execution;
+4. To protect your or other individuals’ life, property and other major legitimate rights and interests but it is difficult to obtain your consent;
+5. Information that you disclose to the public on your own;
+6、Collected from legally publicly disclosed information, such as legal news reports, government information disclosure and other channels.
+
+4. How we protect your user information
+(1) We have used security protection measures that comply with industry standards to protect the user information you provide and prevent data from unauthorized access, public disclosure, use, modification, damage or loss. We will take all reasonable and feasible measures to protect your user information. For example, the data exchanged between your browser and the "Service" is protected by SSL encryption; we also provide https secure browsing on the website; we will use encryption technology to ensure the confidentiality of data; we will use trusted protection mechanisms To prevent data from being maliciously attacked; we will deploy access control mechanisms to ensure that only authorized personnel can access user information; and we will hold security and privacy protection training courses to enhance employees' awareness of the importance of protecting user information.
+(2) We will take all reasonable and feasible measures to ensure that no irrelevant user information is collected. We will only retain your user information for the period necessary to achieve the purposes stated in this policy, unless an extension of the retention period is required or permitted by law.
+(3) The Internet is not an absolutely secure environment, and emails, instant messaging, and communication with other users are not encrypted. We strongly recommend that you do not send user information through such methods.
+(4) The Internet environment is not 100% safe, and we will try our best to ensure the security of any information you send us. Even if we make great efforts and take all reasonable and necessary measures, we may still be unable to prevent your user information from being illegally accessed, illegally stolen, illegally tampered with or destroyed, resulting in damage to your legitimate rights and interests. Please understand the above risks of information networks and bear them voluntarily.
+（五）After an unfortunate user information security incident occurs, we will promptly inform you in accordance with the requirements of laws and regulations: the basic situation and possible impact of the security incident, the disposal measures we have taken or will take, and how you can prevent and reduce risks on your own. Suggestions, remedies for you, etc. We will promptly notify you of the incident-related information through emails, letters, phone calls, push notifications, etc. When it is difficult to inform user information subjects one by one, we will issue announcements in a reasonable and effective manner. At the same time, we will also proactively report the handling of user information security incidents in accordance with the requirements of regulatory authorities.
+
+5. Your rights
+In accordance with relevant laws, regulations, standards, and common practices in other countries and regions, we guarantee that you can exercise the following rights with respect to your user information:
+(1) Access your user information
+You have the right to access your user information, except for exceptions provided by laws and regulations. If you want to exercise your right to access data, you can access it yourself in the following ways: ① Go to the Personal Center to view your personal information; ② Contact us to obtain your personal information.
+If you are unable to access this user information via the link above, you can always contact us using our web form, or send an email to {support@unionurture.com}. We will respond to your access request within 30 days.
+For other user information generated during your use of our products or services, we will provide it to you as long as we do not need to invest too much. If you would like to exercise your data access rights, please send an email to {support@unionurture.com}.
+(2) Correct your user information
+When you find errors in the user information we process about you, you have the right to ask us to make corrections. You can apply for correction through the methods listed in "(1) Access to your user information". If you are unable to correct this user information via the link above, you can always contact us using our web form or email us at {support@unionurture.com}. We will respond to your correction request within 30 days.
+(3) Delete your user information
+You can make a request to us to delete user information under the following circumstances:
+1. If our handling of user information violates laws and regulations;
+2. If we collect and use your user information without your consent;
+3. If our handling of user information violates our agreement with you;
+4. If you no longer use our products or services, or you cancel your account;
+5. If we no longer provide you with products or services.
+We will evaluate your deletion request and, if the corresponding requirements are met, we will take appropriate steps to process it. When you make a deletion request to us, we may ask you for identity verification to protect the security of your account. When you delete information from our services, due to applicable laws and security technologies, we may not immediately delete the corresponding information from the backup system. We will securely store your information until the backup can be cleared or anonymized.
+(4) Change the scope of your authorization and consent
+Each business function requires some basic user information to be completed (see "Part 1" of this policy). For the collection and use of user information, you can give or withdraw your authorization consent at any time. You can operate by yourself in the following ways: ①Go to the personal center to modify your personal information; ②Contact us to modify your personal information.
+When you withdraw your consent, we will no longer process the corresponding user information. At the same time, please note that your withdrawal of authorization consent may lead to certain consequences. For example, we may not be able to continue to provide you with corresponding services or specific functions. However, your decision to withdraw your consent will not affect the previous activities based on your authorization. processing of user information.
+(5) User information subject cancels account
+You can cancel your previously registered account at any time. You can do it yourself in the following ways: ①Contact our support staff.
+After canceling your account, we will stop providing you with products or services and delete or anonymize your information based on your request, unless otherwise provided by laws and regulations. This may also cause you to lose access to the data in your account, so please proceed with caution.
+(6) User information subject obtains a copy of user information
+You have the right to obtain a copy of your user information, which you can do yourself in the following ways: ① Contact our support staff.
+If technically feasible, such as data interface matching, we can also directly transfer a copy of your user information to a third party designated by you at your request.
+(7) Constraint information system automatic decision-making
+In some business functions, we may only make decisions based on non-human automated decision-making mechanisms including information systems, algorithms, etc. If these decisions significantly affect your legal rights and interests, you have the right to ask us for an explanation, and we will also provide appropriate relief.
+(8) Respond to your above request
+For security reasons, you may be required to provide a written request or otherwise prove your identity. We may ask you to verify your identity before processing your request.
+We will respond within thirty days. If you are not satisfied, you can also complain through the following channels: ①Contact our support staff.
+In principle, we do not charge fees for your reasonable requests, but for repeated requests that exceed reasonable limits, we will charge a certain cost depending on the situation. We may reject requests that are unreasonably repetitive, require excessive technical means (for example, require the development of new systems or fundamentally change existing practices), pose risks to the legitimate rights and interests of others, or are highly impractical. Please also understand that due to security considerations, relevant laws and regulations, or technical limitations, we may not be able to respond to some of your requests, such as the following situations:
+1. Relevant to the user information controller’s performance of obligations stipulated in laws and regulations;
+2. Directly related to national security and national defense security;
+3. Directly related to public safety, public health, and major public interests;
+4. Directly related to criminal investigation, prosecution, trial and execution of judgments;
+5. The user information controller has sufficient evidence to show that the user information subject has subjective malice or abuses rights;
+6. To protect the life, property and other major legitimate rights and interests of the user information subject or other individuals but it is difficult to obtain the consent of the user;
+7. Responding to the request of the user information subject will cause serious damage to the legitimate rights and interests of the user information subject or other individuals or organizations;
+8、Involving trade secrets.
+6. How we process children’s personal information
+We take the protection of children's personal information very seriously, and our products, websites and services are primarily intended for adults. Children should not create their own user accounts without the consent of a parent or guardian. Although local laws and customs may define children differently, we consider anyone under the age of 14 to be a child.
+For the collection of children's user information with the consent of parents or guardians, we will only store, use or publicly disclose this information when permitted by law, explicit consent of parents or guardians, or necessary to protect children, otherwise we will try to delete it as soon as possible. related data.
+Given the limitations of existing technology and business models, it is difficult for us to proactively identify children's personal information. If you find that we have collected children's personal information without their knowledge or without prior verifiable guardian consent, You can contact us in time, and we will try to delete it in time after discovering it. If we discover the above situation ourselves, we will also delete it in time , unless we are required by law to retain it.
+7. How your user information is stored and transferred globally
+In principle, user information we collect and generate within the territory of the People's Republic of China will be stored within the territory of the People's Republic of China. We will only retain your user information for the period required for the purposes and uses stated in this policy and the minimum period stipulated by laws and regulations. After the above retention period is exceeded, we will delete your user information in accordance with the requirements of applicable laws and regulations or Anonymization. Unless otherwise provided by laws and regulations, or for purposes of public interest, scientific and historical research, etc., or unless otherwise authorized by you, we may need to retain relevant data for a longer period of time.
+Because we provide products or services through resources and servers around the world, this means that, with your authorization and consent, your user information may be transferred to overseas jurisdictions in the country/region where you use the products or services, or subject to access from these jurisdictions.
+Such jurisdictions may have different or no data protection laws. In such cases, we will ensure that your user information is adequately protected within the People's Republic of China. For example, we will ask for your consent to cross-border transfer of user information, or implement security measures such as data de-identification before cross-border data transfer.
+8. How to update this policy
+Our privacy policy may change. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any changes to this policy on this page.
+For major changes, we will also provide more prominent notices. Major changes referred to in this policy include but are not limited to:
+1. Our service model has undergone major changes. Such as the purpose of processing user information, the type of user information processed, the use of user information, etc.;
+2. We have undergone major changes in ownership structure, organizational structure and other aspects. Such as changes in owners caused by business adjustments, bankruptcy mergers, etc.;
+3. The main objects of user information sharing, transfer or public disclosure change;
+4. There are significant changes in your rights to participate in the processing of user information and how you exercise them;
+5. When our responsible department, contact information and complaint channels for handling user information security change;
+6. When the user information security impact assessment report indicates that there is a high risk.
+We will also archive older versions of this policy for your review.
+9. How to contact us
+If you have any questions, comments or suggestions about this Privacy Policy, please contact us through the following methods:
+Email: {support@unionurture.com}
+We have set up a dedicated department for user information protection. You can contact the relevant personnel through the following methods: Matthew@unionurture.com
+Normally, we will respond within thirty days.
+If you are not satisfied with our response, especially if our user information processing behavior harms your legitimate rights and interests, you can also seek solutions through external channels.

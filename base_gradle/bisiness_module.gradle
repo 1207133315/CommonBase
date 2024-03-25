@@ -1,0 +1,80 @@
+def ext = rootProject.ext
+def androidConfig = ext.android
+def appId = ext.module_appId
+if (ext.isModule) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+// kotlin接入ARouter
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+        arg("room.schemaLocation","$projectDir/schemas".toString())
+    }
+}
+android {
+    compileSdk androidConfig.compileSdkVersion
+    defaultConfig {
+        if (!ext.isModule) {
+            applicationId appId[project.getName()]
+        }
+
+        minSdk androidConfig.minSdkVersion
+        targetSdk androidConfig.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // 接入ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME  : project.getName(),
+                             "room.schemaLocation": "$projectDir/schemas".toString()
+                ]
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+
+        }
+        debug {
+
+        }
+
+    }
+}
+
+dependencies {
+    //implementation ext.dependencies.coreKtx
+    implementation ext.dependencies.appcompat
+    implementation ext.dependencies.material
+   // implementation ext.dependencies.constraintlayout
+    // 接入ARouter  包括kotlin的接入方式
+    implementation ext.dependencies.arouterApi
+    kapt ext.dependencies.arouterCompiler
+    annotationProcessor ext.dependencies.arouterCompiler
+    implementation "androidx.fragment:fragment-ktx:${ext.version.fragment_ktx}"
+    implementation "androidx.activity:activity-ktx:${ext.version.activity_ktx}"
+    implementation project(path: ':module_public:sdks')
+    implementation project(path:':module_system:common')
+   // implementation project(path: ':nativetemplates')
+
+}

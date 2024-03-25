@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemView">
+        <attr name="itemType" format="integer">
+            <enum name="information" value="0"/>
+            <enum name="partner" value="1"/>
+            <enum name="password" value="2"/>
+            <enum name="about" value="3"/>
+            <enum name="language" value="4"/>
+            <enum name="google_play" value="5"/>
+            <enum name="term" value="6"/>
+            <enum name="share" value="7"/>
+            <enum name="privacy_policy" value="8"/>
+            <enum name="features" value="9"/>
+        </attr>
+    </declare-styleable>
+</resources>

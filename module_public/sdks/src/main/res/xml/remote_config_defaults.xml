@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+  <entry>
+    <key>ad_config</key>
+    <value>[{"position":"first_user","adType":"first_user_interstitial","number":1,"ip":true},{"position":"first_user","adType":"first_user_interstitial","number":2,"ip":false},{"position":"first_user","adType":"first_user_interstitial","number":3,"ip":true},{"position":"notification","adType":"interstitial","number":0,"ip":true},{"position":"app_open","adType":"app_open_interstitial","number":99,"ip":true},{"position":"record","adType":"interstitial","number":4,"ip":false},{"position":"record","adType":"reward_interstitial","number":5,"ip":true},{"position":"record","adType":"interstitial","number":6,"ip":false},{"position":"record","adType":"interstitial","number":8,"ip":false},{"position":"record","adType":"interstitial","number":24,"ip":false},{"position":"record","adType":"interstitial","number":10,"ip":false},{"position":"record","adType":"interstitial","number":7,"ip":true},{"position":"record","adType":"interstitial","number":9,"ip":true},{"position":"record","adType":"interstitial","number":12,"ip":false},{"position":"record","adType":"native","number":18,"ip":false},{"position":"record","adType":"interstitial","number":14,"ip":false},{"position":"record","adType":"interstitial","number":16,"ip":false},{"position":"record","adType":"interstitial","number":21,"ip":true},{"position":"record","adType":"interstitial","number":28,"ip":true},{"position":"record","adType":"interstitial","number":32,"ip":true},{"position":"record","adType":"interstitial","number":34,"ip":false},{"position":"analysis","adType":"interstitial","number":35,"ip":false},{"position":"analysis","adType":"reward_interstitial","number":36,"ip":true},{"position":"training","adType":"interstitial","number":42,"ip":true},{"position":"training","adType":"native","number":43,"ip":false},{"position":"training","adType":"native","number":47,"ip":true},{"position":"training","adType":"native","number":48,"ip":true},{"position":"achievement","adType":"native","number":49,"ip":true}]</value>
+  </entry>
+  <entry>
+    <key>big_notification_config</key>
+    <value>true</value>
+  </entry>
+  <entry>
+    <key>ad_load_timeout</key>
+    <value>8</value>
+  </entry>
+</defaults>

@@ -1,0 +1,36 @@
+apply from: '../../base_gradle/public_module.gradle'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+
+    implementation "androidx.room:room-runtime:${ext.version.room}"
+   // annotationProcessor "androidx.room:room-compiler:${ext.version.room}"
+    kapt "androidx.room:room-compiler:${ext.version.room}"
+    implementation "androidx.room:room-ktx:${ext.version.room}"
+    testImplementation "androidx.room:room-testing:${ext.version.room}"
+    implementation "com.google.code.gson:gson:${ext.version.gson}"
+    implementation "com.tencent:mmkv:${ext.version.mmkv}"
+
+
+}

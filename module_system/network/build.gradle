@@ -1,0 +1,30 @@
+apply from: '../../base_gradle/public_module.gradle'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+}
+
+dependencies {
+
+    implementation ext.dependencies.okhttp
+    implementation ext.dependencies.okhttpLogging
+    implementation ext.dependencies.retrofitConverterGson
+    implementation ext.dependencies.retrofit
+    implementation ext.dependencies.retrofitAdapterRxjava2
+}

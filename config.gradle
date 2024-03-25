@@ -1,0 +1,89 @@
+def vs = 14
+
+ext {
+
+    // 如果只运行模块，请改为false；true则所有模块都参与打包
+    isModule = true
+    // 是否打印日志 release版本要改为false
+    isLogable = true
+
+    module_appId = [
+            "ad"          : "com.example.ad",
+            "userinfo"    : "com.example.userinfo",
+            "languagelib" : "com.example.languagelib",
+            "sdks"        : "com.example.sdks",
+            "splash"      : "com.example.splash",
+            "main"        : "com.example.main",
+            "sound_effect": "com.example.soundeffect",
+
+            "loading"     : "com.example.loading",
+            "setting"     : "com.example.setting",
+            "notification": "com.example.notification"
+    ]
+    android = [
+            applicationId    : "com.fengmalisa.sextracker",
+            compileSdkVersion: 34,
+            minSdkVersion    : 29,
+            targetSdkVersion : 34,
+            versionCode      : vs,
+            versionName      : "1.1.4"
+    ]
+
+
+    version = [
+            appcompat               : '1.5.1',
+            constraintlayout        : '2.1.3',
+            coreKtx                 : '1.7.0',
+            material                : '1.4.0',
+            retrofitSdkVersion      : "2.6.0",
+            dagger2SdkVersion       : "2.19",
+            glideSdkVersion         : "4.8.0",
+            arouterCompilerSdk      : "1.5.2",
+            arouterApiSdk           : "1.5.2",
+            okHttpSdkVersion        : '3.12.1',
+            rxandroidSdkVersion     : '2.1.0',
+            rxjavaSdkVersion        : '2.1.0',
+            lottie                  : '5.2.0',
+            kotlin                  : '1.7.10',
+            mmkv                    : '1.2.13',
+            viewmodel_ktx           : '2.5.1',
+            statusbarutil           : '1.4.0',
+            room                    : '2.4.2',
+            AndPermission           : '1.0.8',
+            fragment_ktx            : '1.2.5',
+            activity_ktx            : '1.0.0-alpha03',
+            ad                      : '21.4.0',
+            MPAndroidChart          : 'v3.1.0',
+            gson                    : '2.8.5',
+            google_games            : '20.0.1',
+            coroutines_play_services: '1.5.1',
+            firebase_bom            : '32.3.1',
+            touch_effects           : '0.4.1',
+            flexbox                 : '2.0.1',
+            eventbus                : '3.3.1',
+            jxl                     : "2.6.12",
+            tabLayout               : "3.5.5",
+            recyclerview_animators  : "4.0.2",
+            xbanner                 : "androidx_v1.2.6",
+            nestedradiogroup        : "1.0.1",
+
+    ]
+    dependencies = [
+            appcompat             : "androidx.appcompat:appcompat:${version.appcompat}",
+            constraintlayout      : "androidx.constraintlayout:constraintlayout:${version.constraintlayout}",
+            coreKtx               : "androidx.core:core-ktx:${version.coreKtx}",
+            material              : "com.google.android.material:material:${version.material}",
+            retrofit              : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            retrofitConverterGson : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            retrofitAdapterRxjava2: "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            arouterCompiler       : "com.alibaba:arouter-compiler:${version.arouterCompilerSdk}",
+            arouterApi            : "com.alibaba:arouter-api:${version.arouterApiSdk}",
+            okhttp                : "com.squareup.okhttp3:okhttp:${version.okHttpSdkVersion}",
+            okhttpLogging         : "com.squareup.okhttp3:logging-interceptor:${version.okHttpSdkVersion}",
+            rxandroid             : "io.reactivex.rxjava2:rxandroid:${version.rxandroidSdkVersion}",
+            rxjava                : "io.reactivex.rxjava2:rxjava:${version.rxjavaSdkVersion}",
+            lottie                : "com.airbnb.android:lottie:${version.lottie}",
+            AndPermission         : "com.yanzhenjie:permission:${version.AndPermission}",
+            recyclerview_animators: "jp.wasabeef:recyclerview-animators:${version.recyclerview_animators}"
+    ]
+}

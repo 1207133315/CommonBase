@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_13"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/labelImage"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"/>
+            />
+
+        <com.liningkang.ui.view.BoldTextView
+            android:id="@+id/itemNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_information"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_15"
+            android:layout_toRightOf="@+id/labelImage"
+            android:textColor="@color/_2d3548"
+            android:layout_marginLeft="@dimen/dp_15" />
+
+        <ImageView
+            android:id="@+id/arrowsImage"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/dp_14"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/dp_14"
+            android:src="@drawable/ic_setting_next" />
+
+        <View
+            android:id="@+id/hintView"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/arrowsImage"
+            android:layout_marginRight="@dimen/dp_6"
+            android:background="@drawable/ic_security"/>
+
+    </RelativeLayout>
+</layout>

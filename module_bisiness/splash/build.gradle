@@ -1,0 +1,47 @@
+apply from: '../../base_gradle/bisiness_module.gradle'
+apply plugin: 'org.jetbrains.kotlin.android'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+        versionCode ext.android.versionCode
+        versionName ext.android.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            if (!isModule) {
+                manifest.srcFile 'src/test/AndroidManifest.xml'
+            }
+
+        }
+
+    }
+
+}
+
+dependencies {
+
+
+    implementation project(path: ':module_system:base')
+    implementation project(path: ':module_system:utils')
+    implementation project(path: ':module_public:ui')
+    implementation project(path: ':module_system:common')
+    implementation project(path: ':languagelib')
+    implementation "com.google.code.gson:gson:${ext.version.gson}"
+    implementation "com.github.bumptech.glide:glide:${ext.version.glideSdkVersion}"
+    implementation "com.yanzhenjie:permission:${ext.version.AndPermission}"
+    implementation "jp.wasabeef:recyclerview-animators:${ext.version.recyclerview_animators}"
+    implementation "com.github.angcyo.DslTablayout:TabLayout:${ext.version.tabLayout}"
+    implementation "com.kyle.nestedradiogrouplib:radiogrouplib:${ext.version.nestedradiogroup}"
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation files('libs/TarsosDSPAndroidLatest.jar')
+   // implementation files('libs/musicg-1.4.2.0.jar')
+
+}

@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Intimacy Tracker</string>
+    <string name="loading">Loading...</string>
+
+    <string name="language">Language</string>
+    <string name="next">Next</string>
+    <string name="英语" translatable="false">English</string> <!--英语-->
+    <string name="西班牙语" translatable="false">Español</string> <!--西班牙-->
+    <!--俄语-->
+    <!--葡萄牙-->
+    <!--土耳其-->
+    <!--波兰-->
+    <!--法语-->
+    <!--意大利语-->
+    <!--阿拉伯语-->
+    <!--德语-->
+    <string name="简体中文" translatable="false">简体中文</string> <!--简体中文-->
+    <!--繁体中文-->
+    <!--韩语-->
+    <!--波斯语-->
+    <!--印尼语-->
+    <!--荷兰语-->
+    <!--日语-->
+    <string name="跟随系统">Following system</string>
+    <string name="skip">Skip</string>
+    <string name="agreement_title">Privacy Agreement &amp; Terms of Service</string>
+    <string name="agreement_hint"><![CDATA[Agreeing means you agree to our Privacy \nAgreement & Terms of Service, \nif you do not agree, you will  \nexit this APP immediately]]></string>
+    <string name="see_now">See Now</string>
+    <string name="disagree">Disagree</string>
+    <string name="consent">Agree</string>
+
+
+    <string name="start">Start</string>
+    <string name="welcom_hint">Are you tracking your sexual activity?\nIf not,it might be a great idea to start doing this! </string>
+    <string name="go_on">Go On</string>
+    <string name="save_guide_result_title">Saving your settings\nPlease wait…</string>
+    <string name="save_guide_result_1">Saving your information</string>
+    <string name="save_guide_result_2">Saving your preferences</string>
+    <string name="save_guide_result_3">Saving your privacy settings</string>
+    <string name="save_guide_result_4">Function in preparation</string>
+    <string name="save_guide_result_5">Entering Intimacy Tracker</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="living_room">Living room</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="park">Park</string>
+    <string name="office">Office</string>
+    <string name="in_the_car">In the car</string>
+    <string name="front_of_the_mirror">Front of the mirror</string>
+    <string name="front_of_the_window">Front of the window</string>
+
+
+    <string name="hand_job">Hand job</string>
+    <string name="welcome">Welcome !</string>
+    <string name="press_exit_again">Press exit again</string>
+    <string name="got_it">Got it</string>
+    <string name="training">Training</string>
+    <string name="calendar">Calendar</string>
+    <string name="analysis">Analysis</string>
+    <string name="achievement">Achievement</string>
+    <string name="partner">Partner</string>
+    <string name="set_up">Set Up</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="privacy_password">Privacy Password</string>
+    <string name="about_sex_tracker">About Sex Tracker</string>
+    <string name="go_google_play_to_score">Go to Google Play to score</string>
+    <string name="share">Share</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="term_of_service">Term of service</string>
+    <string name="features">Features</string>
+    <string name="share_msg">Really recommend this awesome app! It tracks your sex life and analyzes it. Make your sex life healthier and safer.</string>
+    <string name="preparing_please_wait">Preparing Please wait…</string>
+    <string name="running">Running...</string>
+
+</resources>

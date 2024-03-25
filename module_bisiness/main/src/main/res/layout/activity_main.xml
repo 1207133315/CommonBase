@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainActivity"
+            type="com.example.main.activity.MainActivity" />
+
+        <variable
+            name="mainViewMode"
+            type="com.example.main.viewmodel.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainView"
+        android:background="@color/_f6faff">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- <com.liningkang.ui.view.lcardview.LCardView
+             android:id="@+id/button"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/dp_120"
+             android:visibility="gone"
+             app:cardBackgroundColor="@color/white"
+             app:cornerRadius="@dimen/dp_10"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:shadowFluidShape="linear"
+             app:shadowSize="@dimen/dp_8"
+             app:shadowStartAlpha="20"
+
+             >
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+         </com.liningkang.ui.view.lcardview.LCardView>-->
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_62"
+            android:background="@drawable/navigation_bg"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_2"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/recordNav"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_2"
+                android:onClick="@{mainActivity.onViewClick}"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@{mainViewMode.navCheckIndex==0 ?@drawable/record_checked:@drawable/record_unchecked}" />
+
+                <com.liningkang.ui.view.BoldTextView
+                    text_bold="@{mainViewMode.navCheckIndex==0}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calendar"
+                    android:textColor="@{mainViewMode.navCheckIndex==0?@color/_7b58ff:@color/_757f8b}"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/reportNav"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_2"
+                android:onClick="@{mainActivity.onViewClick}"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@{mainViewMode.navCheckIndex==1 ?@drawable/report_checked:@drawable/report_unchecked}" />
+
+                <com.liningkang.ui.view.BoldTextView
+                    text_bold="@{mainViewMode.navCheckIndex==1}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/analysis"
+                    android:textColor="@{mainViewMode.navCheckIndex==1?@color/_7b58ff:@color/_757f8b}"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/trainNav"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="@{mainActivity.onViewClick}"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@{mainViewMode.navCheckIndex==2 ?@drawable/train_checked:@drawable/train_unchecked}" />
+
+                <com.liningkang.ui.view.BoldTextView
+                    text_bold="@{mainViewMode.navCheckIndex==2}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/training"
+                    android:textColor="@{mainViewMode.navCheckIndex==2?@color/_7b58ff:@color/_757f8b}"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/achieveNav"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_2"
+                android:onClick="@{mainActivity.onViewClick}"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:background="@{mainViewMode.navCheckIndex==3 ?@drawable/achieve_checked:@drawable/achieve_unchecked}" />
+
+                <com.liningkang.ui.view.BoldTextView
+                    text_bold="@{mainViewMode.navCheckIndex==3}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/achievement"
+                    android:textColor="@{mainViewMode.navCheckIndex==3?@color/_7b58ff:@color/_757f8b}"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/addLayout"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:background="@drawable/ic_record_add"
+            android:onClick="@{mainActivity.onViewClick}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/navigation"
+            app:layout_constraintStart_toStartOf="@id/navigation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

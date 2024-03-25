@@ -1,0 +1,51 @@
+apply from: '../../base_gradle/public_module.gradle'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    //implementation files('libs/analytics-release.aar')
+
+//    implementation project(path: ':module_public:sdks:analytics')
+  //  implementation project(path: ':module_public:sdks:notification')
+    //implementation project(path: ':module_public:sdks:bebe')
+ //   api project(path: ':module_public:sdks:ad')
+    implementation project(path: ':module_system:common')
+    implementation project(path:':module_system:base')
+    implementation "com.google.code.gson:gson:${ext.version.gson}"
+    implementation project(path: ':module_system:utils')
+    implementation 'com.adjust.sdk:adjust-android:4.33.0'
+    implementation platform("com.google.firebase:firebase-bom:${ext.version.firebase_bom}")
+  //  implementation "com.google.android.gms:play-services-ads:${ext.version.ad}"
+    // Firebase Remote Config (Java)
+    // implementation 'com.google.firebase:firebase-config'
+
+   // implementation 'com.google.firebase:firebase-analytics-ktx'
+   // implementation 'com.google.firebase:firebase-analytics'
+
+   // implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+   // implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    //implementation 'com.applovin:applovin-sdk:+'
+}

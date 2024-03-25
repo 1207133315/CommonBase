@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_toLeftOf="@+id/iconBg">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:minHeight="@dimen/dp_43"
+                android:maxLines="3"
+                android:layout_marginRight="@dimen/dp_24"
+                android:text="健康管理"
+                android:layout_centerVertical="true"
+                android:textColor="@color/_333333"
+                android:textSize="@dimen/sp_14" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/iconBg"
+            android:layout_width="@dimen/dp_43"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/notify_unfold_icon_bg"
+            android:layout_height="@dimen/dp_43">
+            <ImageView
+                android:id="@+id/iconView"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_gravity="center"
+
+                />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_34"
+            android:layout_below="@+id/titleLayout"
+            android:text="@string/got_it"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/unfold_notify_button_bg"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="@dimen/dp_14" />
+
+    </RelativeLayout>
+
+
+</layout>

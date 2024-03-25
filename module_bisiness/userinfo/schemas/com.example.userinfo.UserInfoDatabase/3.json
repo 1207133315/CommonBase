@@ -1,0 +1,124 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "02f46f361bd01d63efd2252aec9900e6",
+    "entities": [
+      {
+        "tableName": "UserInfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userId` TEXT NOT NULL, `age` INTEGER NOT NULL, `gender` INTEGER NOT NULL, `sexualPreference` INTEGER NOT NULL, `sexPartner` INTEGER NOT NULL, `menstrualPeriod` INTEGER NOT NULL, `menstrualPeriodDay` INTEGER NOT NULL, `weatherState` INTEGER NOT NULL, `recordList` TEXT, `partnerList` TEXT, `whereList` TEXT, `toyList` TEXT, `isTrainingPlan` INTEGER NOT NULL, `achieveList` TEXT, `trainMap` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "age",
+            "columnName": "age",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sexualPreference",
+            "columnName": "sexualPreference",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sexPartner",
+            "columnName": "sexPartner",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "menstrualPeriod",
+            "columnName": "menstrualPeriod",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "menstrualPeriodDay",
+            "columnName": "menstrualPeriodDay",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weatherState",
+            "columnName": "weatherState",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "recordList",
+            "columnName": "recordList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "partnerList",
+            "columnName": "partnerList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "whereList",
+            "columnName": "whereList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "toyList",
+            "columnName": "toyList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isTrainingPlan",
+            "columnName": "isTrainingPlan",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "achieveList",
+            "columnName": "achieveList",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "trainMap",
+            "columnName": "trainMap",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '02f46f361bd01d63efd2252aec9900e6')"
+    ]
+  }
+}

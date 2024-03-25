@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.liningkang.ui.view.ScaleLottieAnimationView
+        android:id="@+id/animView"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginTop="@dimen/dp_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="lottie/loading.json"
+        app:lottie_loop="true" />
+
+    <com.liningkang.ui.view.BoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/preparing_please_wait"
+        android:textColor="@color/_2d3548"
+        android:textSize="@dimen/sp_16"
+        app:isBold="true"
+        app:layout_constraintTop_toBottomOf="@+id/animView" />
+
+    <com.liningkang.ui.view.progress.LoadProcessBar
+        android:id="@+id/progressBar"
+        android:progressDrawable="@drawable/loading_progress_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

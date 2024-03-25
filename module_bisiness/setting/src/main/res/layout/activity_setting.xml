@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.liningkang.ui.view.title.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:isShowSkip="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="@string/set_up" />
+
+    <LinearLayout
+        android:id="@+id/partnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/set_partner_bg"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/titleView">
+
+        <View
+            android:layout_width="@dimen/dp_113"
+            android:layout_height="@dimen/dp_62"
+            android:layout_marginVertical="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:background="@drawable/ic_set_partner" />
+
+        <com.liningkang.ui.view.BoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:text="@string/partner"
+            android:textColor="@color/_ff4784"
+            android:textSize="@dimen/sp_16"
+            app:isBold="true" />
+
+        <View
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/ic_partner_next" />
+
+    </LinearLayout>
+
+    <com.liningkang.ui.view.DottedLineView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginHorizontal="@dimen/dp_19"
+        android:layout_marginTop="@dimen/dp_18" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/informationView"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:itemType="information" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/passwordView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        app:itemType="password" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/featuresView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        app:itemType="features" />
+
+    <com.liningkang.ui.view.DottedLineView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginHorizontal="@dimen/dp_19"
+        android:layout_marginTop="@dimen/dp_5" />
+
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/aboutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        app:itemType="about" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/googlePlayView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        app:itemType="google_play" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/shareView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        app:itemType="share" />
+
+    <com.liningkang.ui.view.DottedLineView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginHorizontal="@dimen/dp_19"
+        android:layout_marginTop="@dimen/dp_5" />
+
+    <com.example.setting.view.SettingItemView
+        android:id="@+id/privacyView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        app:itemType="privacy_policy" />
+
+    <com.example.setting.view.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:visibility="gone"
+        app:itemType="term" />
+
+
+</LinearLayout>

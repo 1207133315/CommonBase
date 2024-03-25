@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="es-rGB"/><!--英语-->
+    <locale android:name="es-rES"/><!--西班牙语-->
+    <locale android:name="tr-rTR"/><!--土耳其语-->
+    <locale android:name="de-rED"/><!--德语-->
+    <locale android:name="fr-rFR"/><!--法语-->
+    <locale android:name="it-rIT"/><!--意大利语-->
+    <locale android:name="pl-rPL"/><!--波兰语-->
+    <locale android:name="ar"/><!--阿拉伯语-->
+    <locale android:name="ms"/><!--马来语-->
+    <locale android:name="ro"/><!--罗马尼亚语-->
+    <locale android:name="nl-rNL"/><!--荷兰语-->
+    <locale android:name="cs-rCZ"/><!--捷克语-->
+    <locale android:name="el-rGR"/><!--希腊语-->
+    <locale android:name="sv-rSE"/><!--瑞典语-->
+    <locale android:name="pt-rPT"/><!--葡萄牙语-->
+
+</locale-config>

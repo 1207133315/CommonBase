@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoldTextView">
+        <attr name="isBold" format="boolean"/>
+        <attr name="typefacePath" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="bgColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgress">
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="acrColor" format="color"/>
+        <attr name="acrBackgroundColor" format="color"/>
+        <attr name="acrMax" format="integer"/>
+        <attr name="acrTextSize" format="dimension"/>
+        <attr name="acrTextColor" format="color"/>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference" />
+        <attr name="wheel_selected_item_position" format="integer" />
+        <attr name="wheel_item_text_size" format="dimension" />
+        <attr name="wheel_item_text_color" format="color" />
+        <attr name="wheel_selected_item_text_color" format="color" />
+        <attr name="wheel_same_width" format="boolean" />
+        <attr name="wheel_maximum_width_text" format="string" />
+        <attr name="wheel_maximum_width_text_position" format="integer" />
+        <attr name="wheel_visible_item_count" format="integer" />
+        <attr name="wheel_item_space" format="dimension" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_indicator" format="boolean" />
+        <attr name="wheel_indicator_color" format="color" />
+        <attr name="wheel_indicator_size" format="dimension" />
+        <attr name="wheel_curtain" format="boolean" />
+        <attr name="wheel_curtain_color" format="color" /><!--幕布颜色-->
+        <attr name="wheel_atmospheric" format="boolean" />
+        <attr name="wheel_curved" format="boolean" />
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="wheel_font_path" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="WheelMonthPicker">
+        <attr name="model" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="english" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TitleView">
+        <attr name="isShowBack" format="boolean"/>
+        <attr name="isShowSkip" format="boolean"/>
+        <attr name="titleText" format="string"/>
+        <attr name="skipText" format="string"/>
+        <attr name="backRes" format="reference"/>
+        <attr name="skipRes" format="reference"/>
+        <attr name="skipTextColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="BackView">
+        <attr name="res" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="BottomButton">
+        <attr name="buttonText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="MoreView">
+        <attr name="more_type" format="integer">
+
+            <enum name="from_calendar" value="0"/>
+            <enum name="from_analysis" value="1"/>
+            <enum name="from_kegel" value="2"/>
+            <enum name="from_box" value="3"/>
+            <enum name="from_breath" value="4"/>
+            <enum name="from_mindful" value="5"/>
+            <enum name="from_achieve" value="6"/>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarView">
+
+        <!-- *****************************通用属性***************************** -->
+        <!-- 头部，包名+类型 -->
+        <attr name="header_view" format="string" />
+        <!-- 星期标题颜色 -->
+        <attr name="week_title_color" format="color|reference" />
+        <!-- 星期标题字体大小 -->
+        <attr name="week_title_font_size" format="dimension" />
+        <!-- 星期标题，以顿号分割，如：一、二、三、四、五、六、日。起始星期为星期一 -->
+        <attr name="week_title_label" format="string" />
+        <!-- 一周的第一天，1表示星期一，2表示星期二，7表示星期天，注！！！：设置了first_day_of_week，需要同时设置week_title_label -->
+        <attr name="first_day_of_week" format="integer" />
+        <!-- 日期字体大小 -->
+        <attr name="day_font_size" format="dimension" />
+        <!-- 默认文字颜色 -->
+        <attr name="default_color" format="color|reference" />
+        <!-- 默认文字灰色 -->
+        <attr name="default_dim_color" format="color|reference" />
+        <!-- 周未颜色 -->
+        <attr name="weekend_color" format="color|reference" />
+        <!-- 选中背景色 -->
+        <attr name="selected_bg_color" format="color|reference" />
+        <!-- 选中day颜色 -->
+        <attr name="selected_day_color" format="color|reference" />
+        <!-- 范围选择或者按星期选择的日历时，该日期不能选择，但在范围或者星期之间 -->
+        <attr name="selected_day_dim_color" format="color|reference" />
+
+        <!-- *****************************日期范围相关属性***************************** -->
+        <!-- 选中区间背景色，开始与结束之间的日期 -->
+        <attr name="selected_range_bg_color" format="color|reference" />
+        <!-- 选中区间字体颜色，开始与结束之间的日期 -->
+        <attr name="selected_range_day_color" format="color|reference" />
+        <!-- 开始日期背景色 -->
+        <attr name="selected_start_bg_color" format="color|reference" />
+        <!-- 开始日期字体颜色 -->
+        <attr name="selected_start_day_color" format="color|reference" />
+        <!-- 结束日期背景色 -->
+        <attr name="selected_end_bg_color" format="color|reference" />
+        <!-- 结束日期字体颜色 -->
+        <attr name="selected_end_day_color" format="color|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NullDataView">
+        <attr name="icon" format="reference"/>
+        <attr name="hintText" format="string"/>
+        <attr name="iconHeight" format="dimension"/>
+        <attr name="iconWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="AndRatingBar">
+        <!-- color of star -->
+        <attr name="starColor" format="color|reference" />
+
+        <!-- color of secondary star -->
+        <attr name="subStarColor" format="color|reference" />
+
+        <!-- color of background star -->
+        <attr name="bgdColor" format="color|reference" />
+
+        <!-- drawable of star -->
+        <attr name="starDrawable" format="reference" />
+
+        <!-- drawable of background star -->
+        <attr name="bgDrawable" format="reference" />
+
+        <!-- if keep the origin color of star drawable -->
+        <attr name="keepOriginColor" format="boolean" />
+
+        <!-- the scale factor of ratingbar that can change the spacing of star -->
+        <attr name="scaleFactor" format="float" />
+
+        <!-- additional the spacing of the star -->
+        <attr name="starSpacing" format="dimension" />
+
+        <!-- right to left -->
+        <attr name="right2Left" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ZJBCircleSeekBar">
+        <attr name="holo_wheel_size" format="integer" />
+        <attr name="holo_pointer_size" format="integer" />
+        <attr name="holo_max" format="integer"/>
+        <attr name="holo_show_text" format="boolean"/>
+        <attr name="holo_start_angle" format="integer"/>
+        <attr name="holo_end_angle" format="integer"/>
+        <attr name="holo_text_size" format="integer"/>
+        <attr name="holo_init_position" format="integer"/>
+        <attr name="holo_color" format="string"/>
+        <attr name="holo_wheel_active_color" format="string"/>
+        <attr name="holo_wheel_unactive_color" format="string"/>
+        <attr name="holo_pointer_color" format="string"/>
+        <attr name="holo_pointer_halo_color" format="string"/>
+        <attr name="holo_text_color" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="LCardView">
+        <attr name="leftShadowWidth" format="dimension"/>
+        <attr name="topShadowHeight" format="dimension"/>
+        <attr name="rightShadowWidth" format="dimension"/>
+        <attr name="bottomShadowHeight" format="dimension"/>
+        <attr name="shadowSize" format="dimension"/>
+        <attr name="card_shadowColor" format="color"/>
+        <attr name="shadowStartAlpha" format="integer"/>
+        <attr name="shadowFluidShape" format="enum">
+            <enum name="adsorption" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="cardBackgroundColor" format="color"/>
+        <attr name="cardBackground" format="reference|color"/>
+        <attr name="gradientColors" format="string"/>
+        <attr name="gradientSizeFollowView" format="boolean"/>
+        <attr name="gradientDirection" format="enum">
+            <enum name="topToBottom" value="0"/>
+            <enum name="leftToRight" value="1"/>
+            <enum name="leftTopToRightBottom" value="2"/>
+            <enum name="leftBottomToRightTop" value="3"/>
+        </attr>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="leftTopCornerRadius" format="dimension"/>
+        <attr name="rightTopCornerRadius" format="dimension"/>
+        <attr name="leftBottomCornerRadius" format="dimension"/>
+        <attr name="rightBottomCornerRadius" format="dimension"/>
+        <attr name="elevation" format="dimension"/>
+        <attr name="elevationAffectShadowColor" format="boolean"/>
+        <attr name="elevationAffectShadowSize" format="boolean"/>
+        <attr name="xOffset" format="dimension"/>
+        <attr name="yOffset" format="dimension"/>
+        <attr name="leftOffset" format="dimension"/>
+        <attr name="rightOffset" format="dimension"/>
+        <attr name="topOffset" format="dimension"/>
+        <attr name="bottomOffset" format="dimension"/>
+        <attr name="fixedContentWidth" format="boolean"/>
+        <attr name="fixedContentHeight" format="boolean"/>
+        <attr name="paperSyncCorner" format="boolean"/>
+        <attr name="paperCorner" format="dimension"/>
+        <attr name="linearBookEffect" format="boolean"/>
+        <attr name="bookRadius" format="integer"/>
+        <attr name="curveShadowEffect" format="boolean"/>
+        <attr name="curvature" format="float"/>
+        <attr name="useShadowPool" format="boolean"/>
+        <attr name="bindLifeCircle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CodeInputView">
+        <!--验证码数量-->
+        <attr name="itemCount" format="integer" />
+        <!--验证码宽度-->
+        <attr name="itemWidth" format="dimension" />
+        <!--验证码背景-->
+        <attr name="itemBackground" format="reference" />
+        <!--验证码间距-->
+        <attr name="gapWidth" format="dimension" />
+        <!--验证码字体大小-->
+        <attr name="ciTextSize" format="dimension" />
+        <!--验证码字体颜色-->
+        <attr name="ciTextColor" format="color|reference" />
+
+        <!--键盘类型-->
+        <attr name="ciInputType">
+            <enum name="number" value="0" />
+            <enum name="text" value="1" />
+            <enum name="textCapCharacters" value="2" />
+            <enum name="password" value="3" />
+            <enum name="numberPassword" value="4" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+
+    </declare-styleable>
+</resources>

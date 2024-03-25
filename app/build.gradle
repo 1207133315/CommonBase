@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.firebase.crashlytics'
+}
+
+def ext = rootProject.ext
+kapt {
+    arguments {
+        arg("AROUTER_MODULE_NAME", project.getName())
+    }
+}
+android {
+/*    // 配置 ABI 过滤，支持 32 位架构
+    defaultConfig {
+        // ...
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+    }*/
+    signingConfigs {
+
+        debug {
+            storeFile file('..\\keystore\\sex.jks')
+            keyAlias 'sex'
+            keyPassword '123456'
+            storePassword '123456'
+        }
+        config {
+            storeFile file('..\\keystore\\sex.jks')
+            keyAlias 'sex'
+            keyPassword '123456'
+            storePassword '123456'
+        }
+    }
+    compileSdk ext.android.compileSdkVersion
+
+    defaultConfig {
+        applicationId applicationId
+        minSdk ext.android.minSdkVersion
+        targetSdk ext.android.targetSdkVersion
+        versionCode ext.android.versionCode
+        versionName ext.android.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // 接入ARouter
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        //修改打包的文件名 aab apk都有效
+        setProperty("archivesBaseName", "App-IntimacyTracker-v${versionName}")
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+     /*       firebaseCrashlytics {
+                mappingFileUploadEnabled true
+            }*/
+           // debuggable true
+            minifyEnabled true // 混淆
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources true  // 移除无用的resource文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "bool", "is_release", "true"
+            resValue "string","ad_app_id","ca-app-pub-5784018499314885~7844358080"
+        }
+        debug {
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "bool", "is_release", "false"
+            resValue "string","ad_app_id","ca-app-pub-3940256099942544~3347511713"
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation project(path: ':module_system:base')
+    implementation project(path: ':module_system:network')
+    implementation project(path: ':module_system:common')
+    implementation project(path: ':module_public:ui')
+    implementation project(path: ':module_system:utils')
+    implementation project(path: ':module_public:sdks')
+    implementation project(path: ':module_public:sound_effect')
+    implementation project(path: ':languagelib')
+   // implementation project(path: ':module_public:ad')
+    if (ext.isModule == true) {
+
+        implementation project(path: ':module_bisiness:userinfo')
+        implementation project(path: ':module_bisiness:splash')
+        implementation project(path: ':module_bisiness:main')
+
+        implementation project(path: ':module_bisiness:loading')
+        implementation project(path: ':module_bisiness:setting')
+        implementation project(path: ':module_bisiness:notification')
+
+
+    }
+
+    // 接入ARouter  包括kotlin的接入方式
+    implementation ext.dependencies.arouterApi
+    kapt ext.dependencies.arouterCompiler
+    annotationProcessor ext.dependencies.arouterCompiler
+   // 保活sdk
+    //implementation 'com.aheaditec.talsec.security:TalsecSecurity-Community:8.0.2'
+   // implementation project(path:':module_public:sdks:bebe')
+  //  implementation project(path:':module_public:sdks:notification')
+   // implementation project(path:':module_public:sdks:ad')
+//    implementation project(path:':module_public:sdks:analytics')
+}

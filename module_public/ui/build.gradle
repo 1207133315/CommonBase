@@ -1,0 +1,36 @@
+apply from: '../../base_gradle/public_module.gradle'
+apply plugin: 'kotlin-android-extensions'
+def ext = rootProject.ext
+android {
+
+    defaultConfig {
+
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+
+    implementation project(path: ':module_system:common')
+    implementation project(path: ':module_public:sdks')
+    implementation project(path: ':module_system:base')
+    implementation project(path: ':module_system:utils')
+    implementation "com.google.code.gson:gson:${ext.version.gson}"
+    implementation "com.airbnb.android:lottie:${ext.version.lottie}"
+    implementation "com.tencent:mmkv:${ext.version.mmkv}"
+    implementation "com.github.PhilJay:MPAndroidChart:${ext.version.MPAndroidChart}"
+}
